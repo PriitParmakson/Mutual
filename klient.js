@@ -13,9 +13,6 @@ const requestModule = require('request');
 const fs = require('fs');
 const path = require('path');
 
-console.log('__dirname: \n');
-console.log(__dirname);
-
 const certFile = path.resolve(__dirname,
   '../clientKeys/Keystore/TARA-Mutual-Client.crt');
 const keyFile = path.resolve(__dirname,
@@ -39,7 +36,7 @@ requestModule(
       console.log('--- Viga TARA-Mutual-Server-i poole pöördumisel: ', error);
       return
     }
-    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\nHTTP staatuskood: ' +
+    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\nHTTP staatuskood: clear' +
       response.statusCode);
   }
 );
