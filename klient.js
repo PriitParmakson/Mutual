@@ -36,7 +36,7 @@ requestModule(
       console.log('--- Viga TARA-Mutual-Server-i poole pöördumisel: ', error);
       return
     }
-    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\nHTTP staatuskood: clear' +
+    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\n    HTTP staatuskood: clear' +
       response.statusCode);
   }
 );
