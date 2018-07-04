@@ -13,14 +13,12 @@ const requestModule = require('request');
 const fs = require('fs');
 const path = require('path');
 
-console.log(__dirname);
-
 const certFile = path.resolve(__dirname,
-  '../clientKeys/Keystore/TARA-Mutual-Client.crt');
+  '/../clientKeys/Keystore/TARA-Mutual-Client.crt');
 const keyFile = path.resolve(__dirname,
-  '../clientKeys/Keystore/TARA-Mutual-Client.key');
+  '/../clientKeys/Keystore/TARA-Mutual-Client.key');
 const caFile = path.resolve(__dirname,
-  'ssl/../clientKeys/Truststore/TARA-Mutual-CA.crt');
+  '/../clientKeys/Truststore/TARA-Mutual-CA.crt');
 
 var options = {
   url: 'https://localhost:5001',
