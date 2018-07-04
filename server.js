@@ -16,7 +16,7 @@ var options = {
   // Serveri sert
   cert: fs.readFileSync('../serverKeys/Keystore/TARA-Mutual-Server.crt'),
   // Serveri usaldushoidla (trust store) - CA-fail
-  ca: fs.readFileSync('../serverKeys/Truststore/TARA-Mutual.crt')
+  ca: fs.readFileSync('../serverKeys/Truststore/TARA-Mutual-CA.crt')
 };
 
 /**
