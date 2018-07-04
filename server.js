@@ -12,11 +12,11 @@ var app = express();
 
 var options = {
   // Serveri privaatvõti
-  key: fs.readFileSync('../server/Keystore/server-key.pem'),
+  key: fs.readFileSync('../serverKeys/Keystore/server-key.pem'),
   // Serveri sert
-  cert: fs.readFileSync('../server/Keystore/server-crt.pem'),
+  cert: fs.readFileSync('../serverKeys/Keystore/server-crt.pem'),
   // Serveri usaldushoidla (trust store) - CA-fail
-  ca: fs.readFileSync('../server/Truststore/ca_client-crt.pem')
+  ca: fs.readFileSync('../serverKeys/Truststore/ca_client-crt.pem')
 };
 
 /**
