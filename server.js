@@ -1,7 +1,7 @@
 /**
  * Vastastikuse autentimise näiterakendus
  * 
- * Server
+ * TARA-Mutual-Server
  */
 
 var express = require('express');
@@ -47,14 +47,14 @@ app.use(function (req, res, next) {
  */
 app.use(function (req, res, next) {
   res.writeHead(200);
-  res.end("hello world\n");
+  res.end("Klient autenditud\n");
   next();
 });
 
 options.requestCert = true;
 
 var listener = https.createServer(options, app)
-  .listen(4433, function () {
-    console.log('Express HTTPS server listening on port ' +
+  .listen(5001, function () {
+    console.log('TARA-Mutual-Server kuulab pordil: ' +
       listener.address().port);
   });
