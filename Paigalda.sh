@@ -28,7 +28,7 @@ openssl req -new \
   -newkey rsa:2048 \
   -nodes \
   -keyout TARA-Mutual-Server.key \
-  -subj /CN=TARA-Mutual-Server \
+  -subj /CN=localhost \
   > /dev/null
 
 # Genereerin TARA-Mutual-Server-i serdi
@@ -51,7 +51,7 @@ openssl req -new \
   -newkey rsa:2048 \
   -nodes \
   -keyout TARA-Mutual-Client.key \
-  -subj /CN=TARA-Mutual-Client \
+  -subj /CN=localhost \
   > /dev/null
 
 # Genereerin TARA-Mutual-Client-i serdi
@@ -83,3 +83,11 @@ cd ..
 echo Võtmed on paigaldatud
 tree
 
+# Paigaldan Node.js teegid
+npm init
+npm install express --save
+npm install request --save
+
+echo
+echo Node.js teegid paigaldatud
+echo
