@@ -11,6 +11,9 @@
 const requestModule = require('request');
 
 const fs = require('fs');
+const path = require('path');
+
+console.log(__dirname);
 
 const certFile = path.resolve(__dirname,
   '../clientKeys/Keystore/TARA-Mutual-Client.crt');
