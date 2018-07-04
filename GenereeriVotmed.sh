@@ -68,8 +68,8 @@ openssl x509 -in TARA-Mutual-Client.crt -noout -subject
 cp TARA-Mutual-Server.key ../serverKeys/Keystore/TARA-Mutual-Server.key
 cp TARA-Mutual-Server.crt ../serverKeys/Keystore/TARA-Mutual-Server.crt
 # TARA-Mutual-Client-i võtmed
-cp TARA-Mutual-Client.key ../serverKeys/Keystore/TARA-Mutual-Client.key
-cp TARA-Mutual-Client.crt ../serverKeys/Keystore/TARA-Mutual-Client.crt
+cp TARA-Mutual-Client.key ../clientKeys/Keystore/TARA-Mutual-Client.key
+cp TARA-Mutual-Client.crt ../clientKeys/Keystore/TARA-Mutual-Client.crt
 # Paigaldan usaldusankrud
 cp TARA-Mutual-CA.crt ../serverKeys/Truststore/TARA-Mutual-CA.crt 
 cp TARA-Mutual-CA.crt ../clientKeys/Truststore/TARA-Mutual-CA.crt 
