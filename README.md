@@ -26,7 +26,7 @@ Moodusta masinas kaustastruktuur:
 │   └── Truststore
 │       └── TARA-Mutual-CA.crt
 └── TARA-Mutual
-    ├── GenereeriVotmed.sh
+    ├── Paigalda.sh
     ├── klient.js
     ├── README.md
     └── server.js
