@@ -18,10 +18,6 @@ console.log(__dirname);
 
 const certFile = path.resolve(__dirname,
   '../clientKeys/Keystore/TARA-Mutual-Client.crt');
-
-console.log('certFile: \n');
-console.log(certFile);
-  
 const keyFile = path.resolve(__dirname,
   '../clientKeys/Keystore/TARA-Mutual-Client.key');
 const caFile = path.resolve(__dirname,
@@ -43,7 +39,7 @@ requestModule(
       console.log('--- Viga TARA-Mutual-Server-i poole pöördumisel: ', error);
       return
     }
-    console.log('--- Vastus TARA-Mutual-Server-st saadud. HTTP staatuskood: ' +
+    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\nHTTP staatuskood: ' +
       response.statusCode);
   }
 );
