@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# Puhastan CA kausta
+# Puhastan võtmekaustad
 cd ../CA
 rm *
+rm ../serverKeys/Keystore/*
+rm ../serverKeys/Truststore/*
+rm ../clientKeys/Keystore/*
+rm ../clientKeys/Truststore/*
 
 # Moodustan TARA-Mutual-CA
 echo Moodustan TARA-Mutual-CA
