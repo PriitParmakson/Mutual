@@ -4,8 +4,6 @@ TLS vastastikune autentimine tähendab seda, et TLS seansis klient autentib (tuv
 
 Kaustas olevad Node.js näiterakendused `server.js` ja `klient.js` demonstreerivad TLS vastastikust autentimist.
 
-`Paigalda.sh` on skript sertide loomiseks.
-
 ## Eeldused
 
 - Node.js paigaldatud masinas
