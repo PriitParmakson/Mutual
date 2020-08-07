@@ -1,7 +1,7 @@
 /**
  * Vastastikuse autentimise näiterakendus
  * 
- * TARA-Mutual-Server
+ * Mutual-Server
  */
 
 var express = require('express');
@@ -12,11 +12,11 @@ var app = express();
 
 var options = {
   // Serveri privaatvõti
-  key: fs.readFileSync('../serverKeys/Keystore/TARA-Mutual-Server.key'),
+  key: fs.readFileSync('serverKeys/Keystore/Mutual-Server.key'),
   // Serveri sert
-  cert: fs.readFileSync('../serverKeys/Keystore/TARA-Mutual-Server.crt'),
+  cert: fs.readFileSync('serverKeys/Keystore/Mutual-Server.crt'),
   // Serveri usaldushoidla (trust store) - CA-fail
-  ca: fs.readFileSync('../serverKeys/Truststore/TARA-Mutual-CA.crt')
+  ca: fs.readFileSync('serverKeys/Truststore/Mutual-CA.crt')
 };
 
 /**
@@ -55,6 +55,6 @@ options.requestCert = true;
 
 var listener = https.createServer(options, app)
   .listen(5001, function () {
-    console.log('TARA-Mutual-Server kuulab pordil: ' +
+    console.log('Mutual-Server kuulab pordil: ' +
       listener.address().port);
   });

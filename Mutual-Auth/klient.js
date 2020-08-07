@@ -1,7 +1,7 @@
 /**
  * Vastastikuse autentimise näiterakendus
  * 
- * TARA-Mutual-Client
+ * Mutual-Client
  */
 
 /* HTTP kliendi teek
@@ -14,11 +14,11 @@ const fs = require('fs');
 const path = require('path');
 
 const certFile = path.resolve(__dirname,
-  '../clientKeys/Keystore/TARA-Mutual-Client.crt');
+  'clientKeys/Keystore/Mutual-Client.crt');
 const keyFile = path.resolve(__dirname,
-  '../clientKeys/Keystore/TARA-Mutual-Client.key');
+  'clientKeys/Keystore/Mutual-Client.key');
 const caFile = path.resolve(__dirname,
-  '../clientKeys/Truststore/TARA-Mutual-CA.crt');
+  'clientKeys/Truststore/Mutual-CA.crt');
 
 var options = {
   url: 'https://localhost:5001',
@@ -33,10 +33,10 @@ requestModule(
   options,
   function (error, response, body) {
     if (error) {
-      console.log('--- Viga TARA-Mutual-Server-i poole pöördumisel: ', error);
+      console.log('--- Viga Mutual-Server-i poole pöördumisel: ', error);
       return
     }
-    console.log('\n--- Vastus TARA-Mutual-Server-st saadud.\n    HTTP staatuskood: clear' +
+    console.log('\n--- Vastus Mutual-Server-st saadud.\n    HTTP staatuskood: clear' +
       response.statusCode);
   }
 );
