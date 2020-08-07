@@ -1,0 +1,13 @@
+and: * , Ja 
+background: Taust
+but: * , Kuid 
+examples: Juhtumid
+feature: Omadus
+given: * , Eeldades 
+name: Estonian, native: eesti keel,
+rule: Rule
+scenario: Juhtum, Stsenaarium
+scenarioOutline: Raamstjuhtum, Raamstsenaarium
+then: * , Siis 
+when: * , Kui 
+ 

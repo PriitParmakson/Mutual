@@ -1,0 +1,12 @@
+{
+  "VObjects": [
+    { 
+      "Name": "TARA-Mock-Client",
+      "URL": "https://localhost:8081" 
+    },
+    { 
+      "Name": "TARA-Mock-Service",
+      "URL": "https://localhost:8080" 
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+curl --insecure -v https://vis3-pas-01.dev.riaint.ee | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'

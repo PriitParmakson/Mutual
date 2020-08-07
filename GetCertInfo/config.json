@@ -1,0 +1,6 @@
+{
+	"clientCert": "../TARA-Mock/TARA-Mock-client-config/https.crt",
+	"clientKey": "../TARA-Mock/TARA-Mock-client-config/https.key",
+	"rootCA": "../TARA-Mock/TARA-Mock-client-config/rootCA.pem",
+	"vObjectsFile": "VObjects.json"
+}

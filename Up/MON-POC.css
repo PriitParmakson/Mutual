@@ -1,0 +1,19 @@
+#Skaala {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 1rem 0;
+}
+
+/*#region Nupud */
+.nupp { margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  color: #757575;
+  border: 1px solid black;
+  padding: 0 0.8rem;
+  border-radius: 10px;
+  font-size: 200%
+}
+.disabled { color: Gainsboro !important; cursor: auto; }
+
+.otspunkt { margin-right: 1rem; }
